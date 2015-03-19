@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+				
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+	<div data-role="page" id="testpage" data-theme="b">
+		<!-- header -->
+		<div data-role="header">
+			<h1>МОНТАЖНИК</h1>
+			<a href="#panel-overlay">Меню</a>
+		</div>
+		<!-- End header -->
+		<!-- Content -->
+		<div data-role="content" data-theme="a">
+			<ul data-role="listview" data-inset="true">    
+				<li><a href="#price" data-transition="slide">Прайс</a></li>
+				<li><a href="#" data-transition="slide">Калькулятор</a></li>
+			</ul>
+
+			<img  src="img/paris.jpg" alt="Paris, France">
+
+			<h2>ДОБРО ПОЖАЛОВАТЬ!!!</h2>
+			<p>Представлена подборка интересных и полезных статей о монтаже потолков и стен из гипсокартона. Мы консультируем читателей по выполнению монтажных работ связанных с перепланировкой стен и дизайном потолков. На страницах нашего сайта Вы найдете множество различных рубрик,которые будут интересны не только профессионалам,но и всем кто собирается делать ремонт у себя в доме или квартире Ведь каждый хочет увидеть в конце ремонта ровные стены и красивые потолки с элементами авторского дизайна (не исключено что и Вашего) По нашему многолетнему опыту идеальным материалом для этого служит гипсокартон И так если Вы уже начали ремонт (сделали демонтаж и выкинули все лишнее),пришла пора подумать о стенах и потолках.Мы всегда будем рады оказать Вам помощь советом из личного опыта или подберем для Вас необходимый материал.</p>
+
+		</div>
+		<!-- End contrnt -->
+		<!-- footer -->	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#" data-rel="back" data-icon="back" class="ui-btn ui-btn-mini">Назад</a></li>
+				<li><a href="tel:+380672718678" rel="tel" data-icon="phone" class="ui-btn ui-btn-mini">Звонить</a></li>
+				<li><a href="mailto:gips@montagnik.od.ua" rel="external" data-icon="mail" class="ui-btn ui-btn-mini">Писать</a></li>
+				<li><a href="http://montagnik.od.ua" rel="external" data-icon="eye" class="ui-btn ui-btn-mini">Сайт</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- /footer -->
+		<!-- menu -->
+	<div data-role="panel" id="panel-overlay" data-display="overlay">
+			<ul data-role="listview">
+				<li data-icon="delete"><a href="#" data-rel="close"></a></li>
+				<li><a href="#" data-transition="slide">Главнвя</a></li>
+				<li><a href="#price" data-transition="slide">Прайс</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Калькулятор</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+	</div>
+	<!-- End menu -->
+</div><!-- /page -->
+
+<div data-role="page" id="price" data-theme="b">
+	<!-- header -->
+	<div data-role="header">
+		<h1>Монтажник</h1>
+		<a href="#panel-overlay1">Меню</a>
+	</div>
+	<!-- End header -->
+
+	<div data-role="content" data-theme="a">
+		<h4>Цены на выполнение работ по монтажу гипсокертона</h4>
+			<table data-role="table" id="table-column-toggle" data-mode="refolow" class="ui-responsive table-stroke table-stripe">
+				<thead> 
+					<tr>
+						<th>Наименование работ</th>
+						<th>Цена</th>
+					</tr>
+				</thead>
+			<tbody>
+				<tr>
+
+					<td>1 Монтаж потолка - м.кв</td>
+					<td>6 $</td>
+				</tr>
+				<tr>
+					<td>2 Монтаж стены - м.кв</td>
+					<td>5 $</td>
+				</tr>
+				<tr>
+					<td>3 Монтаж перегородки - м.кв</td>
+					<td>8 $</td>
+				</tr>
+				<tr>
+					<td>4 Монтаж короба (прямолинейного) - м.п</td>
+					<td>6 $</td>
+				</tr>
+				<tr>
+					<td>5 Монтаж короба (криволинейного) - м.п</td>
+					<td>8 $</td>
+				</tr>
+				<tr>
+					<td>6 Монтаж киссона (прямолинейного) - м.п</td>
+					<td>10 $</td>
+				</tr>
+				<tr>
+					<td>7 Монтаж киссона (криволинейного) - м.кв </td>
+					<td>12 $</td>
+				</tr>
+				<tr>
+
+					<td>8 Поклейка откосов- м.п</td>
+					<td>5 $</td>
+				</tr>
+			</tbody>
+			</table>		
+		</div><!-- /content -->
+		<!-- footer -->	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#" data-rel="back" data-icon="back" class="ui-btn ui-btn-mini">Назад</a></li>
+				<li><a href="tel:+380672718678" rel="tel" data-icon="phone" class="ui-btn ui-btn-mini">Звонить</a></li>
+				<li><a href="mailto:gips@montagnik.od.ua" rel="external" data-icon="mail" class="ui-btn ui-btn-mini">Писать</a></li>
+				<li><a href="http://montagnik.od.ua" rel="external" data-icon="eye" class="ui-btn ui-btn-mini">Сайт</a></li>
+				
+				</ul>
+			</div>
+		</div>
+	<!-- /footer -->
+	<!-- menu -->
+		<div data-role="panel" id="panel-overlay1" data-display="overlay" data-theme="b">
+			<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close"></a></li>
+			<li><a href="#testpage" data-transition="slide">Главнвя</a></li>
+			<li><a href="#" data-transition="slide">Прайс</a></li>
+			<li><a href="#">Фото</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Калькулятор</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		
+	<!-- End menu -->
+	</div>
+<!-- /page -->
+
+</body>
+</html>
